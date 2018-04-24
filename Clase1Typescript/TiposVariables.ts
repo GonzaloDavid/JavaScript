@@ -17,10 +17,8 @@ class Usuario {
     private mEdad: Number;
     protected mCedula: String;
 
-    constructor(nombre: String,
-                edad: Number,
-                cedula: String,
-    ) {
+    constructor(nombre: String, edad: Number, cedula: String)
+    {
         this.mNombre = nombre;
         this.mEdad = edad;
         this.mCedula = cedula;
