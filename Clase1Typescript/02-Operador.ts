@@ -56,6 +56,7 @@ let resultadoDeLasEdades=arregloUsuarios.reduce(totalEdadesAcumulado,usuarioArre
 interface UsuarioArreglo{
     nombre:'Gonzalo';
     edad:28;
+    deuda?:number;
 }
 
 
@@ -64,6 +65,37 @@ interface UsuarioArreglo{
 let usuariosConCincoAnioMenos=arregloUsuarios.map(
     (usuario:UsuarioArreglo)=>{
         usuario.edad=usuario.edad-5;
+        usuario.deuda=arregloDeudas.reduce((totalAcumulado,deuda:number)=> {
+        return totalAcumulado+((usuario.edad)/100*deuda)
+            },0
+        );
         return usuario;
     }
     );
+//acomodamos el codigo
+let usuariosConCincoAnioMenos=arregloUsuarios.map(
+    (usuario:UsuarioArreglo)=>{
+        usuario.edad=usuario.edad-5;
+        usuario.deuda=arregloDeudas.reduce((totalAcumulado,deuda:number)=> {
+                return totalAcumulado+((usuario.edad)/100*deuda)
+            },0
+        );
+        return usuario;
+    }
+    .filter(()=>usuario:UsuarioArreglo)=>
+{
+    //true si la deuda es menor de 100 y false si la deuda es mayor
+
+}
+);
+function calcularDeudaUsuario(edad:number) {
+    return arregloDeudas.reduce((totalAcumulado,deuda:number)=> {
+            return totalAcumulado+((usuario.edad)/100*deuda)
+        },0
+    );
+}
+
+
+let arregloDeudas=[73,123.32,23,43,50,11];
+
+//operador filter
