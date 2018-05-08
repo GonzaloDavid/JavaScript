@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = 'Adrian';
-  apellido = 'Eguez';
-  edad = 28;
-  sueldo = 1;
+  nombre = 'Gonzalo';
+  apellido = 'Proaño';
+  edad = 22;
+  sueldo = 255578744.55555;
   fechaNacimiento = new Date('1989-06-10');
   nombreBoton = 'Cambiar color';
   nombreClase = 'sa-titulo';
@@ -21,5 +21,8 @@ export class AppComponent {
     } else {
       this.nombreClase = 'sa-titulo';
     }
+  }
+  aplicarClase(algo){
+    console.log('El texto es',algo.value);
   }
 }

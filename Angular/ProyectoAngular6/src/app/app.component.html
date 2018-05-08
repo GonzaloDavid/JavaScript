@@ -1,6 +1,15 @@
-<h1 class="sa-titulo">Hola amigos</h1>
-<p>Nombre:{{nombre}}</p>
-<p>Apellido:{{apellido}}</p>
-<p>Edad:{{edad}}</p>
-<p>Sueldo:{{sueldo}}</p>
-<p>Fecha Naciemiento:{{fechaNacimiento}}</p>//esto se llama interpolacion
+
+<div [hidden]="false">
+<h1 [class]="nombreClase">Hola amigos</h1>//data byning de propiedades
+  <input type="text" #textoInput>
+  <div>
+    <p>Nombre:{{nombre}}</p>
+    <p>Apellido:{{apellido}}</p>
+    <p>Edad:{{edad}}</p>
+    <p>Sueldo:{{sueldo|currency}}</p>
+    <p>Fecha Naciemiento:{{fechaNacimiento|date:'yyyy'-'mm'-'dd'}}</p>//esto se llama interpolacion
+    <button (click)="cambiarClaseDeTitulo() "> {{nombreBoton}} </button>
+
+  </div>
+  <button (click)="aplicarClase(textoInput) "> </button>
+</div>
