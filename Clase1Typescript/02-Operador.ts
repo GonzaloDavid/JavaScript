@@ -1,32 +1,25 @@
-let arregloNumeros=[1,2,4,5];
-let sumaDosNumeros=(numeroUno :number,numeroDos:number)  =>{//fat arrow funct flecha gorda
-  return numeroUno+numeroDos;
-};
-let totalEdades=arregloNumeros=>
+let arreglos=[1,2,3];
+let valorSuma=(numero1:number,numero2:number)=>
 {
-  //codigo extra
+    return numero1+numero2;
 };
-let facultades=a=>['Facultad1','Facultad2'];
-//escribir normalemente
+console.log(valorSuma(1,2));
+//para transpilacompilar se usa tsc
+//se compila con el comando node
 let facultadesDos= function(a)
 {
     return ['facultad1','Facultad2'];
 };
+console.log(facultadesDos(1));
 let facultadesDos1= function(a?)
 {
     return ['facultad1','Facultad2'];
 };
-facultadesDos1();
+console.log(facultadesDos1());
 //operador for each
 let facultades=(a:number)=>['Facultad1','Facultad2'];
-let sumar=0;
-let resultadoDorEach=arregloNumeros.forEach((valor,indice,arreglo)=>
-    {
-        sumar=sumar+1;
-        console.log('valor',valor);
-        console.log('indice',indice);
-        console.log('arreglo',arreglo);
-});
+console.log("Esta es la nueva manera de acortar una funcuion y poner sin el reurnt "+facultades(4));
+
 let resultadoDeLaSuma=arregloNumeros.reduce((totalAcumulado,valorArreglo)=>{
     return totalAcumulado-valorArreglo;
 },20);
@@ -85,9 +78,11 @@ let usuariosConCincoAnioMenos=arregloUsuarios.map(
     .filter(()=>usuario:UsuarioArreglo)=>
 {
     //true si la deuda es menor de 100 y false si la deuda es mayor
-
+return (usuario.deuda<100)
 }
-);
+).every{
+    ((usuario:)=>
+};
 function calcularDeudaUsuario(edad:number) {
     return arregloDeudas.reduce((totalAcumulado,deuda:number)=> {
             return totalAcumulado+((usuario.edad)/100*deuda)
