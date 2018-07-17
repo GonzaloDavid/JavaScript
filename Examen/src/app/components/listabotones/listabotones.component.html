@@ -1,0 +1,9 @@
+<div class="row">
+<div *ngFor="let autor of listaAutores">
+    <div class="col-lg-4" >
+      <button pButton type="button" (click)="seleccionarAutor(autor)" >{{autor.nombre+" "+autor.apellidos}}</button>
+    </div>
+  </div>
+<br>
+</div>
+

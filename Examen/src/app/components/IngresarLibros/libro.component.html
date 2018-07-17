@@ -1,0 +1,33 @@
+<h3>CREAR LIBRO</h3>
+<div>
+  <div>
+    <H4>ICBN: </H4><input id="inputICBN" type="text" size="30" pInputText [(ngModel)]="Iicbn">
+  </div>
+  <div>
+    <H4>Nombre: </H4><input id="inputNombre" type="text" size="30" pInputText [(ngModel)]="Inombre">
+  </div>
+  <div>
+    <H4>Numero Paginas: </H4><input id="inputNumeroPag" type="text" size="30" pInputText [(ngModel)]="InumeroPaginas">
+  </div>
+  <div>
+    <H4>Numero Edicion: </H4><input id="inputEdicion" type="text" size="30" pInputText [(ngModel)]="Iedicion">
+  </div>
+  <div>
+    <H4>Fecha publicacion: </H4><input id="inputFechaP" type="text" size="30" pInputText [(ngModel)]="IfechaP">
+  </div>
+  <div>
+    <H4>Nombre Editorial: </H4><input id="inputNombreE" type="text" size="30" pInputText [(ngModel)]="InombreEditorial">
+  </div>
+  <div>
+    <H4>Autor ID: </H4><input id="inputAutorID" type="text" size="30" pInputText [(ngModel)]="IautorID">
+  </div>
+  <span id="text">{{text}}</span>
+  <br>
+  <div >
+    <button pButton type="button" (click)="crearLibro()"  label="CREAR LIBRO" ></button>
+    <button pButton type="button" (click)="limpiar()"  label="LIMPIAR" ></button>
+  </div>
+
+
+</div>
+

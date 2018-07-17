@@ -1,0 +1,25 @@
+<h3 class="first">Basic</h3>
+<p-table [value]="autor.libros">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ICBN</th>
+      <th>Nombre</th>
+      <th>Numero Paginas</th>
+      <th>Edicion</th>
+      <th>Fecha publicacion</th>
+      <th>Nombre editorial</th>
+      <th>Autor ID</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-libr>
+    <tr>
+      <td>{{libr.ICBN}}</td>
+      <td>{{libr.nombre}}</td>
+      <td>{{libr.numeroPaginas}}</td>
+      <td>{{libr.edicion}}</td>
+      <td>{{libr.fechaPublicacion}}</td>
+      <td>{{libr.nombreEditorial}}</td>
+      <td>{{libr.autorId}}</td>
+    </tr>
+  </ng-template>
+</p-table>

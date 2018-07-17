@@ -1,0 +1,29 @@
+<h3>INGRESAR DATOS AUTOR LIBRO</h3>
+<!--<mat-form-field class="example-full-width">
+<H4>Fecha Nacimiento: </H4><input id="inputFecha" type="text" size="30" pInputText [(ngModel)]="Iimagen">
+  <textarea matInput placeholder="Nombre" #inputNombre></textarea>
+</mat-form-field>-->
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Nombre" [(ngModel)]="Inombre">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Apellido" [(ngModel)]="Iapellidos">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Fecha" [(ngModel)]="Ifecha">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Numero de libros" [(ngModel)]="InumeroLibros">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Es ecuatoriano" [(ngModel)]="IesEcuatoriano">
+</mat-form-field>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Link de imagen" [(ngModel)]="Iimagen">
+</mat-form-field>
+<div >
+  <button mat-fab color="primary" (click)="crearAutor()">CREAR</button>
+  <button mat-fab color="primary" (click)="limpiar()">LIMPIAR</button>
+</div>
+
+
